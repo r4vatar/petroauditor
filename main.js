@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 const Downloader = require('./lib/downloader.js');
 var download= new Downloader("https://explorador.petro.gob.ve/api");
 var argv = require('minimist')(process.argv.slice(2));
