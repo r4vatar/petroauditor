@@ -16,8 +16,23 @@ if ((typeof argv.t)=="number") {
 }
 
 
-for(var i=from ; i<to; i++){
+
+
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+async function run(i,time) {
+  if(time>1){
+    await sleep(10000*time);
+  }
   download.getblock(i).catch(error =>{
     console.log(error)
   })
+}
+
+var xx=1;
+for(var i=from ; i<to; i++){
+  run(i,xx);
+  xx=xx+1;
 }
