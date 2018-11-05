@@ -1,7 +1,7 @@
 {
   "name": "petroauditor",
-  "version": "1.0.1",
-  "description": "",
+  "version": "1.0.2",
+  "description": "A simple tool for downloading petroblockchain json",
   "main": "index.js",
   "bin": {
     "petroauditor": "./main.js"
